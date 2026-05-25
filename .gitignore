@@ -9,3 +9,6 @@ cleanplay_custom.txt
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Package files
+*.zip
