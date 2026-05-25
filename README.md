@@ -1,5 +1,9 @@
 # CleanPlay v1: VLC Profanity Filter Extension
 
+<p align="center">
+  <img src="assets/logo.png" alt="CleanPlay Logo" width="200" />
+</p>
+
 CleanPlay is a lightweight, fully offline VLC Media Player extension that automatically mutes audio whenever profanity appears in the subtitles. 
 
 Unlike speech-to-text filters, CleanPlay uses local subtitle timestamps as a guide, making it highly accurate, extremely lightweight, and 100% private.
