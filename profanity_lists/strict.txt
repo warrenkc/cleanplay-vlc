@@ -1,0 +1,34 @@
+# CleanPlay Strict Profanity List
+# Words here are checked under Strict strictness level.
+fuck
+cunt
+motherfuck
+goddamn
+wanker
+slut
+whore
+faggot
+nigger
+retard
+fucking
+fucker
+cunts
+motherfucker
+cocksucker
+motherfucking
+goddamned
+prick
+twat
+bollocks
+bastards
+niggers
+faggots
+sluts
+whores
+fucking
+fucking
+f*ck
+sh*t
+b*tch
+a**
+c*nt

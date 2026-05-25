@@ -1,0 +1,18 @@
+# CleanPlay Standard Profanity List
+# Words here are checked under Standard and Strict strictness levels.
+ass
+bitch
+bastard
+shit
+pussy
+dick
+cock
+jerk
+asshole
+douche
+crap
+craphead
+bitches
+shitty
+assholes
+bitchy

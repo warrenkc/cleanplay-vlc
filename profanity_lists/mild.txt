@@ -1,0 +1,11 @@
+# CleanPlay Mild Profanity List
+# Words here are checked under Mild, Standard, and Strict strictness levels.
+hell
+damn
+crap
+butt
+piss
+darn
+heck
+buttface
+pissed

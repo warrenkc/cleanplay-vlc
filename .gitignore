@@ -1,0 +1,11 @@
+# Logs
+*.log
+vlc_log*.txt
+intf_active.txt
+
+# User-specific data
+cleanplay_custom.txt
+
+# OS metadata
+.DS_Store
+Thumbs.db
