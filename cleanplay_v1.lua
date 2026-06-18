@@ -40,6 +40,23 @@ local function url_decode(str)
     return str
 end
 
+-- Converts file:// URIs to local filesystem paths
+local function uri_to_path(uri)
+    local path = url_decode(uri)
+    if string.sub(path, 1, 8) == "file:///" then
+        -- Check if it is Windows (has a drive letter after the 3 slashes)
+        if string.match(path, "^file:///[A-Za-z]:") then
+            path = string.sub(path, 9) -- Remove "file:///"
+        else
+            path = string.sub(path, 8) -- Remove "file://" but keep the third "/"
+        end
+    elseif string.sub(path, 1, 7) == "file://" then
+        path = string.sub(path, 8)
+    end
+    path = string.gsub(path, "\\", "/")
+    return path
+end
+
 -- Trackers for media path and SPU track changes
 local current_loaded_media_path = nil
 local current_loaded_spu_id = nil
@@ -745,10 +762,7 @@ function check_track_changes()
     if item then
         local uri = item:uri()
         if uri and uri ~= "" then
-            local decoded_path = url_decode(uri)
-            decoded_path = string.gsub(decoded_path, "^file:///", "")
-            decoded_path = string.gsub(decoded_path, "^file://", "")
-            decoded_path = string.gsub(decoded_path, "\\", "/")
+            local decoded_path = uri_to_path(uri)
             
             local active_id = vlc.var.get(input, "spu-es") or -1
             
@@ -1393,10 +1407,7 @@ function autoload_subtitle(quiet)
         return
     end
     
-    local path = url_decode(uri)
-    path = string.gsub(path, "^file:///", "")
-    path = string.gsub(path, "^file://", "")
-    path = string.gsub(path, "\\", "/")
+    local path = uri_to_path(uri)
     
     local input = vlc.object.input()
     local active_id = -1
