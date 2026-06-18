@@ -37,6 +37,10 @@ CleanPlay uses a two-part decoupled architecture:
 1. **Extension UI (`cleanplay_v1.lua`)**: Opens the control panel from the **View** menu. It parses your subtitles, filters them based on your strictness settings, and serializes the mute timestamps to a global variable registered on VLC's shared playlist object.
 2. **Background Interface Script (`cleanplay_intf_v1.lua`)**: Runs silently in the background when VLC starts. It continuously monitors the playback time, checks if it falls inside any mute window, and toggles VLC volume between `0` and your manual listening volume.
 
+> [!IMPORTANT]
+> **Keep the Dialog Box Open**
+> The CleanPlay dialog box must remain open (you can minimize, resize, or move it off-screen) for the filter to work. Closing the dialog box will deactivate the extension, disabling the audio filter.
+
 ---
 
 ## Supported Formats
@@ -46,7 +50,7 @@ CleanPlay uses a two-part decoupled architecture:
 
 ---
 
-## Subtitles in MKV / Embedded Tracks
+## Subtitles in MKV / Embedded Tracks/Users/warrenz/Documents/repos/clean-vid-vlc/cleanplay-vlc/INSTALL.md
 
 > [!NOTE]
 > **Zero Setup Subtitle Extraction**

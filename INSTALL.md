@@ -80,3 +80,6 @@ You can watch the [CleanPlay Tutorial Video](https://us06web.zoom.us/clips/share
    - If the subtitle file is in the same folder as the video with the same name, or if you are playing an MKV file containing embedded subtitles, click **Autoload from Video Dir**.
 4. Click the **Apply Settings** button to sync the profanity timestamp data with the background interface script.
 5. You can verify the background script is active by looking at the **Ticks** count under **Real-time Stats**—it will count up continuously!
+
+> [!WARNING]
+> Do **not** close the CleanPlay dialog window while watching your video. Closing the window deactivates the extension and disables the audio filter. If you want it out of the way, you can resize it or move it to the side/another screen.
