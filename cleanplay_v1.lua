@@ -142,7 +142,7 @@ function deactivate()
 end
 
 function close()
-    deactivate()
+    vlc.deactivate()
 end
 
 -- -----------------------------------------------------------------------------
