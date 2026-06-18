@@ -71,6 +71,8 @@ If you prefer to install the files manually, follow these steps:
 
 ## How to Use CleanPlay v1
 
+You can watch the [CleanPlay Tutorial Video](https://us06web.zoom.us/clips/share/zWDc3rZyTSOW7ejBc1vYsA) for a complete visual guide on how to use the extension, or follow the steps below:
+
 1. Start playing a video in VLC.
 2. Go to **View > CleanPlay v1** in the VLC top menu to open the filter control panel.
 3. Load your subtitles:

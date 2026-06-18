@@ -10,6 +10,12 @@ Unlike speech-to-text filters, CleanPlay uses local subtitle timestamps as a gui
 
 ---
 
+## Tutorial Video
+
+Watch the [CleanPlay Tutorial Video](https://us06web.zoom.us/clips/share/zWDc3rZyTSOW7ejBc1vYsA) to see a demonstration of how to install and use the extension (MacOS demonstrated, Windows usage is very similar).
+
+---
+
 ## Features
 
 1. **Local & Private**: No internet access, speech-to-text, or external APIs are used. Everything runs locally on your computer.
